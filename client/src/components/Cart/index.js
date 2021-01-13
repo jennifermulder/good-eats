@@ -60,7 +60,7 @@ const Cart = () => {
       <div className="cart-closed" onClick={toggleCart}>
         <span
           role="img"
-          aria-label="trash">🛒</span>
+          aria-label="trash">📖 </span>
       </div>
     );
   }
@@ -82,7 +82,7 @@ const Cart = () => {
   //toggle on cartOpen value when [close] text is clicked
   return (
     <div className="cart">
-      <div className="close" onClick={toggleCart}>[close]</div>
+      <div className="close" onClick={toggleCart}>[X]</div>
       <h2>Recipies to Save</h2>
       {state.cart.length ? (
         <div>
