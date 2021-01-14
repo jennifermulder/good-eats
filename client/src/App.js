@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
 import Login from "./pages/Login";
+import Footer from "./components/Footer";
 import Signup from "./pages/Signup";
 import Nav from "./components/Nav";
 import Success from "./pages/Success";
@@ -43,6 +44,7 @@ function App() {
               <Route exact path="/success" component={Success} />
               <Route component={NoMatch} />
             </Switch>
+            <Footer/>
           </StoreProvider>
         </div>
       </Router>

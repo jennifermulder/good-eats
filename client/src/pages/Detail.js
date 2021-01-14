@@ -133,17 +133,17 @@ function Detail() {
           </p>
           <p>
             <strong>Ingredients:</strong>
-            ${currentProduct.ingredients}
+            {currentProduct.ingredients}
             {" "}
           </p>
           <p>
             <strong>Preferred Method of cooking:</strong>
-            ${currentProduct.method}
+            {currentProduct.method}
             {" "}
           </p>
           <p>
             <strong>How to:</strong>
-            ${currentProduct.instructions}
+            {currentProduct.instructions}
             {" "}
           </p>
         </div>
