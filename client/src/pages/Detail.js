@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useQuery } from '@apollo/react-hooks';
-
+import { Button } from '@material-ui/core';
 import { QUERY_PRODUCTS } from "../utils/queries";
 import { useStoreContext } from "../utils/GlobalState";
 import {
@@ -103,32 +103,49 @@ function Detail() {
           <Link to="/">
             ← Back to Products
           </Link>
-
+        <p>
           <h2>{currentProduct.name}</h2>
-
-          <p>
+        </p>
+        <p>
             {currentProduct.description}
-          </p>
-
-          <p>
-            <strong>Price:</strong>
-            ${currentProduct.price}
-            {" "}
-            <button onClick={addToCart}>
-              Add to Cart
-            </button>
-            <button
+        </p>
+          <Button color="primary"onClick={addToCart}>Add to Cook Book</Button>
+            {/* <button onClick={addToCart}>
+              Add to Cook Book
+            </button> */}
+            {/* <button
               disabled={!cart.find(p => p._id === currentProduct._id)}
               onClick={removeFromCart}
             >
               Remove from Cart
-            </button>
-          </p>
-
+            </button> */}
+          {/* </p> */}
+            <p>
           <img
             src={`/images/${currentProduct.image}`}
             alt={currentProduct.name}
           />
+          </p>
+          <p>
+            <strong>Total Cook Time:</strong>
+            {currentProduct.cooktime}Min
+            {" "}
+          </p>
+          <p>
+            <strong>Ingredients:</strong>
+            ${currentProduct.ingredients}
+            {" "}
+          </p>
+          <p>
+            <strong>Preferred Method of cooking:</strong>
+            ${currentProduct.method}
+            {" "}
+          </p>
+          <p>
+            <strong>How to:</strong>
+            ${currentProduct.instructions}
+            {" "}
+          </p>
         </div>
       ) : null}
       {

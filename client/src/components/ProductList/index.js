@@ -61,6 +61,10 @@ function filterProducts() {
                   _id={product._id}
                   image={product.image}
                   name={product.name}
+                  cooktime={product.cooktime}
+                  ingredients={product.ingredients}
+                  method={product.method}
+                  instructions={product.instructions}
                   price={product.price}
                   quantity={product.quantity}
                 />

@@ -9,6 +9,7 @@ db.once('open', async () => {
     { name: 'Veggies' },
     { name: 'Sauces' },
     { name: 'Cheese' },
+    { name: 'The Basics' },
     { name: 'Extras (Smoothies!)' }
   ]);
 
@@ -27,6 +28,10 @@ db.once('open', async () => {
       //ingredients
       //steps to make
       category: categories[0]._id,
+      cooktime: 20,
+      ingredients: 'stuff',
+      method: 'airfryer',
+      instructions: 'more instructions',
       price: 2.99,
       quantity: 500
     },
@@ -36,33 +41,49 @@ db.once('open', async () => {
         'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
       image: 'canned-coffee.jpg',
       category: categories[0]._id,
+      cooktime: 20,
+      ingredients: 'stuff',
+      method: 'airfryer',
+      instructions: 'more instructions',
       price: 1.99,
       quantity: 500
     },
     {
-      name: 'Toilet Paper',
+      name: 'Brocolli Cheese Bites',
       category: categories[1]._id,
       description:
         'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
-      image: 'toilet-paper.jpg',
+      image: 'brocolli-cheese-bites.jpg',
+      cooktime: 20,
+      ingredients: 'stuff',
+      method: 'airfryer',
+      instructions: 'more instructions',
       price: 7.99,
       quantity: 20
     },
     {
-      name: 'Handmade Soap',
-      category: categories[1]._id,
+      name: 'Eggwhites Spinach Cheese',
+      category: categories[4]._id,
       description:
-        'Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.',
-      image: 'soap.jpg',
+        'Pretty self explanatory.',
+      image: 'egg-spinach-cheese.jpg',
+      cooktime: 20,
+      ingredients: 'stuff',
+      method: 'airfryer',
+      instructions: 'more instructions',
       price: 3.99,
       quantity: 50
     },
     {
-      name: 'Set of Wooden Spoons',
-      category: categories[1]._id,
+      name: 'Peanut Butter and Spinach smoothie',
+      category: categories[5]._id,
       description:
-        'Vivamus ut turpis in purus pretium mollis. Donec turpis odio, semper vel interdum ut, vulputate at ex. Duis dignissim nisi vel tortor imperdiet finibus. Aenean aliquam sagittis rutrum.',
-      image: 'wooden-spoons.jpg',
+        'Includes a bunch of other yummy things.',
+      cooktime: 20,
+      ingredients: 'stuff',
+      method: 'airfryer',
+      instructions: 'more instructions',
+      image: 'peanutbutter-spinach-smoothie.jpg',
       price: 14.99,
       quantity: 100
     },
@@ -72,6 +93,10 @@ db.once('open', async () => {
       description:
         'Vestibulum risus metus, luctus non tortor quis, tincidunt consectetur ex. Nullam vitae lobortis ligula, ut sagittis massa. Curabitur consectetur, tellus at pulvinar venenatis, erat augue cursus erat, eu ullamcorper eros lectus ultrices ipsum. Integer rutrum, augue vitae auctor venenatis, turpis turpis elementum orci, at sagittis risus mi a leo.',
       image: 'camera.jpg',
+      cooktime: 20,
+      ingredients: 'stuff',
+      method: 'airfryer',
+      instructions: 'more instructions',
       price: 399.99,
       quantity: 30
     },
@@ -81,6 +106,10 @@ db.once('open', async () => {
       description:
         'In sodales, ipsum quis ultricies porttitor, tellus urna aliquam arcu, eget venenatis purus ligula ut nisi. Fusce ut felis dolor. Mauris justo ante, aliquet non tempus in, tempus ac lorem. Aliquam lacinia dolor eu sem eleifend ultrices. Etiam mattis metus metus. Sed ligula dui, placerat non turpis vitae, suscipit volutpat elit. Phasellus sagittis, diam elementum suscipit fringilla, libero mauris scelerisque ex, ac interdum diam erat non sapien.',
       image: 'tablet.jpg',
+      cooktime: 20,
+      ingredients: 'stuff',
+      method: 'airfryer',
+      instructions: 'more instructions',
       price: 199.99,
       quantity: 30
     },
@@ -90,6 +119,10 @@ db.once('open', async () => {
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare diam quis eleifend rutrum. Aliquam nulla est, volutpat non enim nec, pharetra gravida augue. Donec vitae dictum neque. Pellentesque arcu lorem, fringilla non ligula ac, tristique bibendum erat. Ut a semper nibh. Quisque a mi et mi tempor ultricies. Maecenas eu ipsum eu enim hendrerit accumsan at euismod urna.',
       image: 'bedtime-book.jpg',
+      cooktime: 20,
+      ingredients: 'stuff',
+      method: 'airfryer',
+      instructions: 'more instructions',
       price: 9.99,
       quantity: 100
     },
@@ -98,6 +131,10 @@ db.once('open', async () => {
       category: categories[4]._id,
       description: 'Ut vulputate hendrerit nibh, a placerat elit cursus interdum.',
       image: 'spinning-top.jpg',
+      cooktime: 20,
+      ingredients: 'stuff',
+      method: 'airfryer',
+      instructions: 'more instructions',
       price: 1.99,
       quantity: 1000
     },
@@ -107,6 +144,10 @@ db.once('open', async () => {
       description:
         'Sed a mauris condimentum, elementum enim in, rhoncus dui. Phasellus lobortis leo odio, sit amet pharetra turpis porta quis.',
       image: 'plastic-horses.jpg',
+      cooktime: 20,
+      ingredients: 'stuff',
+      method: 'airfryer',
+      instructions: 'more instructions',
       price: 2.99,
       quantity: 1000
     },
@@ -116,6 +157,10 @@ db.once('open', async () => {
       description:
         'Vestibulum et erat finibus erat suscipit vulputate sed vitae dui. Ut laoreet tellus sit amet justo bibendum ultrices. Donec vitae felis vestibulum, congue augue eu, finibus turpis.',
       image: 'teddy-bear.jpg',
+      cooktime: 20,
+      ingredients: 'stuff',
+      method: 'airfryer',
+      instructions: 'more instructions',
       price: 7.99,
       quantity: 100
     },
@@ -125,6 +170,10 @@ db.once('open', async () => {
       description:
         'Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.',
       image: 'alphabet-blocks.jpg',
+      cooktime: 20,
+      ingredients: 'stuff',
+      method: 'airfryer',
+      instructions: 'more instructions',
       price: 9.99,
       quantity: 600
     }

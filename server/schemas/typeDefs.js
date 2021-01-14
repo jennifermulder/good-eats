@@ -12,6 +12,10 @@ const typeDefs = gql`
     description: String
     image: String
     quantity: Int
+    cooktime: Int
+    method: String
+    ingredients: String
+    instructions: String
     price: Float
     category: Category
   }

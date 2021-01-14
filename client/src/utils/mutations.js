@@ -20,6 +20,10 @@ export const ADD_ORDER = gql`
         _id
       name
       description
+      cooktime
+      method
+      ingredients
+      instructions
       price
       quantity
       category {

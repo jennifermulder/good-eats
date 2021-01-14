@@ -14,6 +14,20 @@ const productSchema = new Schema({
   image: {
     type: String
   },
+  cooktime: {
+    type: Number,
+    min: 0,
+    default: 0
+  },
+  method: {
+    type: String
+  },
+  ingredients: {
+    type: String
+  },
+  instructions: {
+    type: String
+  },
   price: {
     type: Number,
     required: true,

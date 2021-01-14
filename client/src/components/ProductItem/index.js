@@ -10,6 +10,10 @@ function ProductItem(item) {
     image,
     name,
     _id,
+    cooktime,
+    ingredients,
+    method,
+    instructions,
     price,
     quantity
   } = item;
@@ -53,7 +57,7 @@ function ProductItem(item) {
       </Link>
       <div>
         <div> Cook Time:{quantity} {pluralize("minute", quantity)} </div>
-        <span>${price} SOME HIGHLIGHTS OF RECIPIE</span>
+        <span>{description} SOME HIGHLIGHTS OF RECIPIE</span>
       </div>
       <button onClick={addToCart}>Add to Cook Book 📖 </button>
     </div>
