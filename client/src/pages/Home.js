@@ -15,7 +15,7 @@ const Home = () => {
         
     </div>
     <div className="container">
-        <h2>About the Cook: <Button color="primary">Hello World</Button></h2>
+        <h2>About the Cook:</h2>
         <img src={profileImage} className="my-2" style={{ maxWidth: "65%", width: "50%" }} alt="Jennifer Mulder" />
         <p id="about-me"> Full-Time Accountant, Part Time cook, Fun Time Coder. I love to try new recipies that fit my needs and the ingredients in my fridge/ pantry.
         </p>  

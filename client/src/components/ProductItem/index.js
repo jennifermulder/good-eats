@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Button } from '@material-ui/core';
 import { idbPromise, pluralize } from "../../utils/helpers"
 
 import { useStoreContext } from '../../utils/GlobalState';
@@ -10,6 +11,7 @@ function ProductItem(item) {
     image,
     name,
     _id,
+    description,
     cooktime,
     ingredients,
     method,
@@ -59,7 +61,8 @@ function ProductItem(item) {
         <div> Cook Time:{quantity} {pluralize("minute", quantity)} </div>
         <span>{description} SOME HIGHLIGHTS OF RECIPIE</span>
       </div>
-      <button onClick={addToCart}>Add to Cook Book 📖 </button>
+      {/* <button onClick={addToCart}>Add to Cook Book 📖 </button> */}
+      <Button variant="contained" color="primary" onClick={addToCart}>Add to Cook Book 📖 </Button>
     </div>
   );
 }

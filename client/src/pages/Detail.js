@@ -109,7 +109,7 @@ function Detail() {
         <p>
             {currentProduct.description}
         </p>
-          <Button color="primary"onClick={addToCart}>Add to Cook Book</Button>
+          <Button variant="contained" color="primary" onClick={addToCart}>Add to Cook Book</Button>
             {/* <button onClick={addToCart}>
               Add to Cook Book
             </button> */}
