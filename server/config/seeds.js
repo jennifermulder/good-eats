@@ -19,32 +19,33 @@ db.once('open', async () => {
 
   const products = await Product.insertMany([
     {
-      name: 'Turkey Meatballs',
+      name: 'Turkey Brocolli Stuffed Bell Peppers',
       description:
-        'These are Turkey Meatballs that I make.',
-      image: 'cookie-tin.jpg',
+        'Can be made with or without pizza sauce. Load with cheese and spices for extra goodness.',
+      image: 'turkey-brocolli-bellpeppers.jpg',
       // time: 90min
       //favorite way to cook
       //ingredients
       //steps to make
       category: categories[0]._id,
       cooktime: 20,
-      ingredients: 'stuff',
-      method: 'airfryer',
-      instructions: 'more instructions',
+      // ingredients to take array? Loop through array to create bullets?
+      ingredients: 'Bell Peppers, turkey, brocolli, hot sauce, curry powder, cumin, mozarella',
+      method: 'Airfryer',
+      instructions: 'Panfry the turkey so that it is no longer pink, chop up brocolli into small pieces and add brocolli with spices to the mix. Add cheese to the mixture towards the end so that it starts to melt but does not burn. Layer cheese, stuffing, cheese, stuffing like a noodleless lasagna. Pop in the airfryer till cheese has melted on top.',
       price: 2.99,
       quantity: 500
     },
     {
       name: 'Panko Shrimp',
       description:
-        'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
-      image: 'canned-coffee.jpg',
+        'All of the crunch, not all of the carbs.',
+      image: 'panko-shrimp.jpg',
       category: categories[0]._id,
-      cooktime: 20,
-      ingredients: 'stuff',
-      method: 'airfryer',
-      instructions: 'more instructions',
+      cooktime: 25,
+      ingredients: 'Shrimp, panko bread crumbs, 2 eggs, flour',
+      method: 'Airfryer',
+      instructions: 'Unshell thawed shrimp. Coat in flour, egg, and panko bread crumbs. Airfry for about 10 - 15 minutes until shrimp has cooked. Pairs well with peanut sauce ',
       price: 1.99,
       quantity: 500
     },
@@ -52,12 +53,12 @@ db.once('open', async () => {
       name: 'Brocolli Cheese Bites',
       category: categories[1]._id,
       description:
-        'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
+        'I like to buy large bags of brocolli. This is a guilt free way to eat more cheese.',
       image: 'brocolli-cheese-bites.jpg',
       cooktime: 20,
-      ingredients: 'stuff',
-      method: 'airfryer',
-      instructions: 'more instructions',
+      ingredients: 'Brocolli, shredded cheese, grated parmesean cheese, small amount of turkey (to bind), egg, seasoning',
+      method: 'Airfryer',
+      instructions: 'Combine all ingredients together in a large bowl. Roll the mixture into small balls. Airfry for 10 minutes, till outer layer is crisp.',
       price: 7.99,
       quantity: 20
     },
@@ -68,9 +69,9 @@ db.once('open', async () => {
         'Pretty self explanatory.',
       image: 'egg-spinach-cheese.jpg',
       cooktime: 20,
-      ingredients: 'stuff',
-      method: 'airfryer',
-      instructions: 'more instructions',
+      ingredients: 'Eggwhites, spinach, cheese',
+      method: 'Stove top',
+      instructions: 'Great breakfast or snack time item',
       price: 3.99,
       quantity: 50
     },
@@ -88,15 +89,15 @@ db.once('open', async () => {
       quantity: 100
     },
     {
-      name: 'Camera',
-      category: categories[2]._id,
+      name: 'Basil Cinnamon Chicken Wings',
+      category: categories[0]._id,
       description:
-        'Vestibulum risus metus, luctus non tortor quis, tincidunt consectetur ex. Nullam vitae lobortis ligula, ut sagittis massa. Curabitur consectetur, tellus at pulvinar venenatis, erat augue cursus erat, eu ullamcorper eros lectus ultrices ipsum. Integer rutrum, augue vitae auctor venenatis, turpis turpis elementum orci, at sagittis risus mi a leo.',
-      image: 'camera.jpg',
+        'Pretty much all in the title, Sweet and Savory with plenty of flavor',
+      image: 'basil-cinammon-wings.jpg',
       cooktime: 20,
-      ingredients: 'stuff',
-      method: 'airfryer',
-      instructions: 'more instructions',
+      ingredients: 'Wings or drumsticks, chopped up basil leaves, cinnamon, fish oil, coconut aminos, honey, red pepper flakes, toasted sesame oil',
+      method: 'Airfryer',
+      instructions: 'Create a marinade using all ingredients with proportions to your liking. Marinade overnight or for 4 hours if you are really hungry. Airfry for about 10 minutes and enjoy!',
       price: 399.99,
       quantity: 30
     },

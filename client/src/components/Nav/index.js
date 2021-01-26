@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState } from 'react';
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
+import Button from '@material-ui/core/Button';
 
 function Nav() {
 
   function showNavigation() {
+
+  // const [anchorEl, setAnchorEl] = useState(false);
+
+  // const handleClick = (event) => {
+  //   setAnchorEl(event.currentTarget);
+  // };
     if (Auth.loggedIn()) {
       return (
         <ul className="flex-row">
@@ -28,6 +35,10 @@ function Nav() {
       );
     } else {
       return (
+        <>
+        <Button aria-controls="simple-menu" aria-haspopup="true">
+        Open Menu
+      </Button>
         <ul className="flex-row">
           <li className="mx-1">
             <Link to="/signup">
@@ -40,6 +51,7 @@ function Nav() {
             </Link>
           </li>
         </ul>
+        </>
       );
     }
   }
