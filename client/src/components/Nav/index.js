@@ -50,6 +50,16 @@ function Nav() {
               Login
             </Link>
           </li>
+          <li className="mx-1">
+            <Link to="/about">
+              About the Chef
+            </Link>
+          </li>
+          <li className="mx-1">
+            <Link to="/grocerylist">
+              Grocery List
+            </Link>
+          </li>
         </ul>
         </>
       );
