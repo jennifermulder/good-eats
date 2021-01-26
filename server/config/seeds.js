@@ -80,10 +80,10 @@ db.once('open', async () => {
       category: categories[5]._id,
       description:
         'Includes a bunch of other yummy things.',
-      cooktime: 20,
-      ingredients: 'stuff',
-      method: 'airfryer',
-      instructions: 'more instructions',
+      cooktime: 5,
+      ingredients: 'Peanut Butter, Sinach, Honey, water, pineapple, cilantro, lime',
+      method: 'Mixer',
+      instructions: 'Combine all ingredients to mixer. Add as much water as necessary to get desired consistency',
       image: 'peanutbutter-spinach-smoothie.jpg',
       price: 14.99,
       quantity: 100
@@ -102,82 +102,32 @@ db.once('open', async () => {
       quantity: 30
     },
     {
-      name: 'Tablet',
-      category: categories[2]._id,
+      name: 'Bell Pepper Pizza',
+      category: categories[4]._id,
       description:
-        'In sodales, ipsum quis ultricies porttitor, tellus urna aliquam arcu, eget venenatis purus ligula ut nisi. Fusce ut felis dolor. Mauris justo ante, aliquet non tempus in, tempus ac lorem. Aliquam lacinia dolor eu sem eleifend ultrices. Etiam mattis metus metus. Sed ligula dui, placerat non turpis vitae, suscipit volutpat elit. Phasellus sagittis, diam elementum suscipit fringilla, libero mauris scelerisque ex, ac interdum diam erat non sapien.',
-      image: 'tablet.jpg',
-      cooktime: 20,
-      ingredients: 'stuff',
-      method: 'airfryer',
-      instructions: 'more instructions',
+        'The perfect snack for when you are craving Digiornos.',
+      image: 'bellpepper-pizza.jpg',
+      cooktime: 5,
+      ingredients: 'Bell Peppers, Pepperoni, Mozarella, Basil',
+      method: 'Airfryer',
+      instructions: 'But bell pepper into 4ths. Add layer of cheese before pepperoni slices and basil, top with cheese. Can also add marinara sauce if desired. Goes great with ranch.',
       price: 199.99,
       quantity: 30
     },
     {
-      name: 'Tales at Bedtime',
-      category: categories[3]._id,
+      name: 'Asian Wing Sauce',
+      category: categories[2]._id,
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare diam quis eleifend rutrum. Aliquam nulla est, volutpat non enim nec, pharetra gravida augue. Donec vitae dictum neque. Pellentesque arcu lorem, fringilla non ligula ac, tristique bibendum erat. Ut a semper nibh. Quisque a mi et mi tempor ultricies. Maecenas eu ipsum eu enim hendrerit accumsan at euismod urna.',
-      image: 'bedtime-book.jpg',
-      cooktime: 20,
-      ingredients: 'stuff',
-      method: 'airfryer',
-      instructions: 'more instructions',
+        'Goes great on wings. Goes great on anything.',
+      image: 'asian-wing-sauce.jpg',
+      cooktime: 5,
+      ingredients: 'Soy Sauce, Honey, Lime Juice, Hot Sauce (I prefer vinnegar based or buffalo sauce), Peanut Sauce. Red Pepper Flakes',
+      method: 'Airfryer',
+      instructions: 'Mix it all up with some corn starch to make it thicker. Airfry wings before coating in sauce. Indulge',
       price: 9.99,
       quantity: 100
     },
-    {
-      name: 'Spinning Top',
-      category: categories[4]._id,
-      description: 'Ut vulputate hendrerit nibh, a placerat elit cursus interdum.',
-      image: 'spinning-top.jpg',
-      cooktime: 20,
-      ingredients: 'stuff',
-      method: 'airfryer',
-      instructions: 'more instructions',
-      price: 1.99,
-      quantity: 1000
-    },
-    {
-      name: 'Set of Plastic Horses',
-      category: categories[4]._id,
-      description:
-        'Sed a mauris condimentum, elementum enim in, rhoncus dui. Phasellus lobortis leo odio, sit amet pharetra turpis porta quis.',
-      image: 'plastic-horses.jpg',
-      cooktime: 20,
-      ingredients: 'stuff',
-      method: 'airfryer',
-      instructions: 'more instructions',
-      price: 2.99,
-      quantity: 1000
-    },
-    {
-      name: 'Teddy Bear',
-      category: categories[4]._id,
-      description:
-        'Vestibulum et erat finibus erat suscipit vulputate sed vitae dui. Ut laoreet tellus sit amet justo bibendum ultrices. Donec vitae felis vestibulum, congue augue eu, finibus turpis.',
-      image: 'teddy-bear.jpg',
-      cooktime: 20,
-      ingredients: 'stuff',
-      method: 'airfryer',
-      instructions: 'more instructions',
-      price: 7.99,
-      quantity: 100
-    },
-    {
-      name: 'Alphabet Blocks',
-      category: categories[4]._id,
-      description:
-        'Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.',
-      image: 'alphabet-blocks.jpg',
-      cooktime: 20,
-      ingredients: 'stuff',
-      method: 'airfryer',
-      instructions: 'more instructions',
-      price: 9.99,
-      quantity: 600
-    }
+    
   ]);
 
   console.log('products seeded');
