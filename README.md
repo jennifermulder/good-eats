@@ -8,8 +8,6 @@ Provide the user with a collection of the favorite everyday recipies to hopefull
 ## Features
 When the user loads the site, they are able to view a homepage with a quick bio as well as a few examples of recent recipies. MORE DETAILS TO COME ****** 
 
-
-
 ## Built With
 * React JS
 * JavaScript
@@ -27,7 +25,7 @@ To run program: node server
 
 ## Deployed Application
 
-HEROKU DEPLOYED
+HEROKU DEPLOYED HERE
 
 ## Project Status
 Kinda Keto is a work in progress, with new and tasty recipies always being added.
