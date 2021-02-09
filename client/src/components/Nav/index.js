@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
 import Button from '@material-ui/core/Button';
+import './style.css';
 
 function Nav() {
 
@@ -71,7 +72,7 @@ function Nav() {
       <h1>
         <Link to="/">
           <span role="img" aria-label="shopping bag">🍳  </span>
-          -Kinda Keto
+          Kinda Keto
         </Link>
       </h1>
 

@@ -4,6 +4,7 @@ import { useQuery } from '@apollo/react-hooks';
 import { QUERY_CATEGORIES } from "../../utils/queries";
 import { useStoreContext } from "../../utils/GlobalState";
 import { idbPromise } from '../../utils/helpers';
+import { Button } from '@material-ui/core';
 import './style.css';
 
 function CategoryMenu() {
@@ -52,19 +53,20 @@ function CategoryMenu() {
     <>
     <br></br>
     <h2>Categories:</h2>
-    <div className="categories">
+    <div className="categories flex-container">
       
       {categories.map(item => (
-        <button
+        <Button variant="contained" color="secondary" className="categoryitem"
           key={item._id}
           onClick={() => {
             handleClick(item._id);
           }}
         >
           {item.name}
-        </button>
+        </Button>
       ))}
     </div>
+    <br></br>
     <br></br>
     </>
   );

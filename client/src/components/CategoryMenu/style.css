@@ -1,4 +1,20 @@
 .categories {
   border-style: dashed;
-  padding: 2px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  /* justify-items: center; */
+  
 };
+
+.categoryitem {
+  padding: 30px;
+  margin: 20px;
+  justify-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .categories {
+    flex-direction: column;   
+  }
+}
