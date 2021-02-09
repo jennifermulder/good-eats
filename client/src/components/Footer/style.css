@@ -1,0 +1,32 @@
+.externallink {
+  text-align: center;
+  border: black;
+}
+
+.flex-container {
+  display: flex;
+  /* width: 50%;
+  height: 100%; */
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  /* align-items: stretch; */
+  align-content: space-between;
+
+}
+
+.links {
+  padding: 20px;
+}
+
+a {
+  position: center;
+}
+
+.fa-github:before, .fa-linkedin:before, .fa-envelope-square:before  {
+  font-size: xx-large;
+}
+
+.fa-github:hover, .fa-linkedin:hover, .fa-envelope-square:hover  {
+  font-size: xx-large;
+  color: blue;
+}

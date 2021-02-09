@@ -1,49 +1,39 @@
 import React from "react";
+import Grid from '@material-ui/core/Grid';
+import './style.css';
 
 function Footer() {
   return (
-    <>
-    {/* // <StyledFooter className="site-footer">
-    //     <StyledFlexDiv className="container footer-media-adj">
-    //       <StyledFlexItem className="footer-flex-adj"> */}
-            <h6>About</h6>
-              <hr/>
-            <p className="text-center">
-              Here at Garage Collage,...
-            </p>
-          {/* // </StyledFlexItem>
+<>
+      <footer className="externallink">
+        <h5>Contact</h5>
+        <hr />
 
-          // <StyledFlexItem className="footer-flex-adj"> */}
-            <h6>Contact</h6>
-              <hr/>
-            <ul className="footer-links">
-              {/* <StyledP>Jennifer Mulder</StyledP>
-              <StyledHrJM/> */}
-              <li><a href="https://www.linkedin.com/in/jennifer-mulder-cpa-2125b571/">Linkedin</a></li>
-              <li><a href="https://github.com/jennifermulder">Github</a></li>
-              <li><a href="https://github.com/jennifermulder">Email</a></li>
-            </ul>
-          {/* // </StyledFlexItem> */}
+        <nav className="flex-container">
+          
+          <div className="links">
+          <a href="https://github.com/jennifermulder" target="_blank"><i className="fab fa-github"></i></a>
+          
+          </div>
 
-          {/* // <StyledFlexItem className="footer-flex-adj"> */}
-            <h6>Quick Links</h6>
-              <hr/>
-            <ul className="footer-links">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Contribute</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Sitemap</a></li>
-            </ul>
-      {/* //     </StyledFlexItem>
-      //   </StyledFlexDiv>
-      // <StyledCopyright> */}
-        <p className="container">
-          Copyright &copy; 2020 All Rights (Not Yet) Reserved
+          <div className="links">
+          <a href="https://www.linkedin.com/in/jennifer-mulder-cpa-2125b571/"
+            target="blank"><i className="fab fa-linkedin"></i></a>
+         
+          </div>
+
+          <div className="links">
+          <a href="mailto:jlmulder2014@gmail.com"
+            target="blank"><i className="fas fa-envelope-square"></i></a>
+          </div>
+         
+        </nav>
+  
+        <p>
+          Copyright &copy; 2021 All Rights (Not Yet) Reserved
         </p>
-    {/* //   </StyledCopyright> */}
-    {/* // </StyledFooter> */}
-    </>
+      </footer>
+</>
   );
 }
 

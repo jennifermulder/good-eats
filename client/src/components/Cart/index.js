@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import styled from "styled-components";
-import keyframes from "styled-components";
+// import styled from "styled-components";
+// import keyframes from "styled-components";
 import CartItem from '../CartItem';
 import Auth from '../../utils/auth';
 import './style.css';
@@ -10,22 +10,22 @@ import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../../utils/actions';
 import { idbPromise } from "../../utils/helpers";
 import { QUERY_CHECKOUT } from '../../utils/queries';
 
-const rotate = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
+// const rotate = keyframes`
+//   from {
+//     transform: rotate(0deg);
+//   }
 
-  to {
-    transform: rotate(360deg);
-  }
-`;
+//   to {
+//     transform: rotate(360deg);
+//   }
+// `;
 
-const Rotate = styled.div`
-  display: inline-block;
-  animation: ${rotate} 2s linear infinite;
-  padding: 2rem 1rem;
-  font-size: 1.2rem;
-`;
+// const Rotate = styled.div`
+//   display: inline-block;
+//   animation: ${rotate} 2s linear infinite;
+//   padding: 2rem 1rem;
+//   font-size: 1.2rem;
+// `;
 
 const Cart = () => {
 
@@ -59,11 +59,11 @@ const Cart = () => {
   if (!state.cartOpen) {
     return (
       <div className="cart-closed" onClick={toggleCart}>
-        <Rotate>
+        {/* <Rotate> */}
         <span
           role="img"
           aria-label="book">📖 </span>
-          </Rotate>
+          {/* </Rotate> */}
       </div>
     );
   }

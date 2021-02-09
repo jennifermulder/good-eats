@@ -4,6 +4,7 @@ import { useQuery } from '@apollo/react-hooks';
 import { QUERY_CATEGORIES } from "../../utils/queries";
 import { useStoreContext } from "../../utils/GlobalState";
 import { idbPromise } from '../../utils/helpers';
+import './style.css';
 
 function CategoryMenu() {
   // const { data: categoryData } = useQuery(QUERY_CATEGORIES);
@@ -48,8 +49,11 @@ function CategoryMenu() {
   };
 
   return (
-    <div>
-      <h2>Categories:</h2>
+    <>
+    <br></br>
+    <h2>Categories:</h2>
+    <div className="categories">
+      
       {categories.map(item => (
         <button
           key={item._id}
@@ -61,6 +65,8 @@ function CategoryMenu() {
         </button>
       ))}
     </div>
+    <br></br>
+    </>
   );
 }
 
