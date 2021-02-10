@@ -37,7 +37,7 @@ function Nav() {
     } else {
       return (
         <>
-        <Button aria-controls="simple-menu" aria-haspopup="true">
+        <Button color="primary" variant="contained" aria-controls="simple-menu" aria-haspopup="true">
         Open Menu
       </Button>
         <ul className="flex-row">
@@ -71,7 +71,6 @@ function Nav() {
     <header className="flex-row px-1">
       <h1>
         <Link to="/">
-          <span role="img" aria-label="shopping bag">🍳  </span>
           Kinda Keto
         </Link>
       </h1>

@@ -3,6 +3,12 @@ import { Link } from "react-router-dom";
 import { useMutation } from '@apollo/react-hooks';
 import Auth from "../utils/auth";
 import { ADD_USER } from "../utils/mutations";
+import { Button } from '@material-ui/core';
+import './style.css';
+
+import green from '@material-ui/core/colors/green';
+
+const accent = green[600]; 
 
 function Signup(props) {
   const [formState, setFormState] = useState({ email: '', password: '' });
@@ -77,9 +83,9 @@ function Signup(props) {
           />
         </div>
         <div className="flex-row flex-end">
-          <button type="submit">
+          <Button variant="contained" color="accent" type="submit">
             Submit
-          </button>
+          </Button>
         </div>
       </form>
     </div>

@@ -3,6 +3,8 @@ import { useMutation } from '@apollo/react-hooks';
 import { Link } from "react-router-dom";
 import { LOGIN } from "../utils/mutations"
 import Auth from "../utils/auth";
+import { Button } from '@material-ui/core';
+import './style.css';
 
 function Login(props) {
   const [formState, setFormState] = useState({ email: '', password: '' })
@@ -61,9 +63,9 @@ function Login(props) {
           </div> : null
         }
         <div className="flex-row flex-end">
-          <button type="submit">
+          <Button type="submit">
             Submit
-          </button>
+          </Button>
         </div>
       </form>
     </div>

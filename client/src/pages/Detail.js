@@ -13,7 +13,7 @@ import {
 import { idbPromise } from "../utils/helpers";
 // import { idbPromise } from "../../utils/helpers";
 import spinner from '../assets/spinner.gif'
-
+import './style.css';
 import Cart from '../components/Cart';
 
 function Detail() {
@@ -25,16 +25,7 @@ function Detail() {
   // passing the _id value of product selected to the useQuery() Hook and displaying the response to the page.
   const { loading, data } = useQuery(QUERY_PRODUCTS);
 
-  // const products = data?.products || [];
-
-  // useEffect(() => {
-  //   if (products.length) {
-  //     setCurrentProduct(products.find(product => product._id === id));
-  //   }
-  // }, [products, id]);
-
-
-  const { products, cart } = state;
+    const { products, cart } = state;
   //update global state, update in Indexeddb
   const addToCart = () => {
     const itemInCart = cart.find((cartItem) => cartItem._id === id)
@@ -110,9 +101,7 @@ function Detail() {
             {currentProduct.description}
         </p>
           <Button variant="contained" color="primary" onClick={addToCart}>Add to Cook Book</Button>
-            {/* <button onClick={addToCart}>
-              Add to Cook Book
-            </button> */}
+           
             {/* <button
               disabled={!cart.find(p => p._id === currentProduct._id)}
               onClick={removeFromCart}

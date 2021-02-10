@@ -62,7 +62,6 @@ function ProductItem(item) {
         <div> Cook Time:{cooktime} {pluralize("minute", cooktime)} </div>
         {/* <span>{description}</span> */}
       </div>
-      {/* <button onClick={addToCart}>Add to Cook Book 📖 </button> */}
       <Button variant="contained" color="primary" onClick={addToCart}>Add to Cook Book 📖 </Button>
     </div>
   );

@@ -9,6 +9,7 @@ import { useStoreContext } from '../../utils/GlobalState';
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../../utils/actions';
 import { idbPromise } from "../../utils/helpers";
 import { QUERY_CHECKOUT } from '../../utils/queries';
+import { Button } from '@material-ui/core';
 
 // const rotate = keyframes`
 //   from {
@@ -96,9 +97,9 @@ const Cart = () => {
             {/* <strong>Total: ${calculateTotal()}</strong> */}
             {
               Auth.loggedIn() ?
-                <button onClick={submitCheckout}>
+                <Button onClick={submitCheckout}>
                   Checkout
-            </button>
+            </Button>
                 :
                 <span>(log in to save to Cook Book )</span>
             }
