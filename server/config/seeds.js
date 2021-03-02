@@ -43,9 +43,9 @@ db.once('open', async () => {
       image: 'panko-shrimp.jpg',
       category: categories[0]._id,
       cooktime: 25,
-      ingredients: 'Shrimp, panko bread crumbs, 2 eggs, flour',
+      ingredients: 'Shrimp, panko bread crumbs, 2 eggs, almond meal/ flour, grated parmesean cheese',
       method: 'Airfryer',
-      instructions: 'Unshell thawed shrimp. Coat in flour, egg, and panko bread crumbs. Airfry for about 10 - 15 minutes until shrimp has cooked. Pairs well with peanut sauce ',
+      instructions: 'Unshell thawed shrimp. Coat in flour, egg, parmesean cheese and panko bread crumbs. Airfry for about 10 - 15 minutes until shrimp has cooked. Pairs well with peanut sauce ',
       price: 1.99,
       quantity: 500
     },
@@ -102,11 +102,89 @@ db.once('open', async () => {
       quantity: 30
     },
     {
+      name: '"Healthy Noodle" PadThai',
+      category: categories[1]._id,
+      description:
+        'Plant based noodle alternative from the almighty Costco',
+      image: 'healthynoodle-padthai.jpg',
+      cooktime: 20,
+      ingredients: 'Healthy Noods, Peanut Butter, Peanuts, Coconut Aminos, Cliantro, Eggs or Eggwhites, Lime Juice',
+      method: 'Pan Fry',
+      instructions: 'Cook noods according to directions on the package (rinse and pan fry for a few minutes). Throw in remaining ingredients, can add any protein (I didnt have any at the time). Top off with Sriratcha',
+      price: 199.99,
+      quantity: 30
+    },
+    {
       name: 'Bell Pepper Pizza',
       category: categories[4]._id,
       description:
         'The perfect snack for when you are craving Digiornos.',
       image: 'bellpepper-pizza.jpg',
+      cooktime: 5,
+      ingredients: 'Bell Peppers, Pepperoni, Mozarella, Basil',
+      method: 'Airfryer',
+      instructions: 'Cut bell pepper into 4ths. Add layer of cheese before pepperoni slices and basil, top with cheese. Can also add marinara sauce if desired. Goes great with ranch.',
+      price: 199.99,
+      quantity: 30
+    },
+    {
+      name: 'Panko Crusted Mushrooms',
+      category: categories[1]._id,
+      description:
+        'Basically vegetarian calamari',
+      image: 'panko-mushrooms.jpg',
+      cooktime: 20,
+      ingredients: 'Mushrooms, panko bread crumbs, 2 eggs, teryaki sauce, sriratcha, almond meal/flour, grated parmesean cheese',
+      method: 'Airfryer',
+      instructions: 'Coat chopped mushrooms in egg and any desired sauces (teriyaki, hot sauce), then coat in flour, parmesean cheese, and panko bread crumb mixture. Airfry for about 10 minutes to cook the eggs. Pairs well with peanut sauce or fish oil sauce. ',
+      price: 199.99,
+      quantity: 30
+    },
+    {
+      name: 'Bell Pepper Pizza',
+      category: categories[4]._id,
+      description:
+        'The perfect snack for when you are craving Digiornos.',
+      image: 'bellpepper-pizza.jpg',
+      cooktime: 5,
+      ingredients: 'Bell Peppers, Pepperoni, Mozarella, Basil',
+      method: 'Airfryer',
+      instructions: 'But bell pepper into 4ths. Add layer of cheese before pepperoni slices and basil, top with cheese. Can also add marinara sauce if desired. Goes great with ranch.',
+      price: 199.99,
+      quantity: 30
+    },
+    {
+      name: 'Panko Crusted Zuchinni Fries',
+      category: categories[1]._id,
+      description:
+        'Basically the same as the Panko Mushrooms',
+      image: 'panko-zuchinni-fries.jpg',
+      cooktime: 20,
+      ingredients: 'Zuchinni, panko bread crumbs, 2 eggs, almond meal/flour, grated parmesean cheese',
+      method: 'Airfryer',
+      instructions: 'Coat chopped zuchinnis in egg, then coat in flour, parmesean cheese, and panko bread crumb mixture. Airfry for about 10 minutes to cook the eggs. Pairs well with peanut sauce or fish oil sauce. ',
+      price: 199.99,
+      quantity: 30
+    },
+    {
+      name: 'Turkey Lettuce Wraps',
+      category: categories[0]._id,
+      description:
+        'Pretty much anything can be made into a lettuce wrap with any sauce',
+      image: 'turkey-lettuce-wraps.jpg',
+      cooktime: 10,
+      ingredients: 'Butter Lettuce, ground turkey, veggie toppings, desired sauces',
+      method: 'Pan Fry',
+      instructions: 'The only cooking involved is really the turkey. Throw in whatever sauces (I used teriyaki and sriracha). Once cooked, plate it on some washed butter lettuce and top with beansprouts, cilantro, etc.',
+      price: 199.99,
+      quantity: 30
+    },
+    {
+      name: 'Peanut Butter Cookies',
+      category: categories[4]._id,
+      description:
+        'The perfect snack for when you are craving Digiornos.',
+      image: '',
       cooktime: 5,
       ingredients: 'Bell Peppers, Pepperoni, Mozarella, Basil',
       method: 'Airfryer',
