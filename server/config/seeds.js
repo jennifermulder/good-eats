@@ -141,19 +141,6 @@ db.once('open', async () => {
       quantity: 30
     },
     {
-      name: 'Bell Pepper Pizza',
-      category: categories[4]._id,
-      description:
-        'The perfect snack for when you are craving Digiornos.',
-      image: 'bellpepper-pizza.jpg',
-      cooktime: 5,
-      ingredients: 'Bell Peppers, Pepperoni, Mozarella, Basil',
-      method: 'Airfryer',
-      instructions: 'But bell pepper into 4ths. Add layer of cheese before pepperoni slices and basil, top with cheese. Can also add marinara sauce if desired. Goes great with ranch.',
-      price: 199.99,
-      quantity: 30
-    },
-    {
       name: 'Panko Crusted Zuchinni Fries',
       category: categories[1]._id,
       description:
@@ -183,12 +170,12 @@ db.once('open', async () => {
       name: 'Peanut Butter Cookies',
       category: categories[4]._id,
       description:
-        'The perfect snack for when you are craving Digiornos.',
-      image: '',
-      cooktime: 5,
-      ingredients: 'Bell Peppers, Pepperoni, Mozarella, Basil',
+        'The perfect keto cookie',
+      image: 'peanutbutter-cookies',
+      cooktime: 15,
+      ingredients: 'Peanut Butter, 1 Egg, Sweetener',
       method: 'Airfryer',
-      instructions: 'But bell pepper into 4ths. Add layer of cheese before pepperoni slices and basil, top with cheese. Can also add marinara sauce if desired. Goes great with ranch.',
+      instructions: 'Mix all ingredients in a bowl. Rolls into balls, flatten, and place in airfryer',
       price: 199.99,
       quantity: 30
     },
