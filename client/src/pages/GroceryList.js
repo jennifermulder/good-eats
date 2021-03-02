@@ -11,18 +11,30 @@ const GroceryList = () => {
         <li>Turkey</li> 
         <li>🐔  Chicken (wings!)</li>
         <li>Shrimppp</li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>Eggs</li>
         <h3>Veggies</h3>
         <li>Spinach</li>
         <li>Cauliflower</li>
         <li>Brocolli</li>
+        <li>Cucumbers</li>
+        <li>Zuchinni</li>
         <li>Bell Peppers (All colors!)</li>
-        <li></li>
-        <li></li>
+        <li>Butter Lettuce</li>
+        <li>Spinach</li>
+        <li>Kale</li>
+        <li>Cilantro</li>
+        <li>Basil</li>
+        <h3>Sauces/Condiments, etc.</h3>
+        <li>Sriratcha</li>
+        <li>Teriyaki</li>
+        <li>Coconut Aminos</li>
+        <li>Honey (Definitely not Keto)</li>
+        <li>Peanut Butter</li>
+        <li>Parmesean Cheese</li>
+        <li>Pasta/Pizza Sauce</li>
+        <h3>Cheese (Fam sized)</h3>
+        <li>Mozarella</li>
+        <li>Mild Cheddar</li>
     </div>
     </>
   );

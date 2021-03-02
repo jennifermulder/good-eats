@@ -37,9 +37,9 @@ function Nav() {
     } else {
       return (
         <>
-        <Button color="primary" variant="contained" aria-controls="simple-menu" aria-haspopup="true">
+        {/* <Button color="primary" variant="contained" aria-controls="simple-menu" aria-haspopup="true">
         Open Menu
-      </Button>
+      </Button> */}
         <ul className="flex-row">
           <li className="mx-1">
             <Link to="/signup">
